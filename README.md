@@ -1,4 +1,4 @@
-# Ant Newman CEng MIET MIEEE
+# Ant Newman
 
 CEO, Tortoise AI | 20 years getting AI into production
 
