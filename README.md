@@ -55,7 +55,7 @@ CC BY 4.0.
 I publish on AI deployment, decision-making under complexity, and what 
 production-grade reliability actually requires.
 
-[LinkedIn](https://linkedin.com/in/antnewman) · 
+[LinkedIn](https://linkedin.com/in/ant-newman) · 
 [tortoiseai.co.uk/insights](https://tortoiseai.co.uk/insights)
 
 ---
