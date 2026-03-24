@@ -2,7 +2,7 @@
 
 CEO, Tortoise AI | CEng, MIET, MIEEE | 20 years getting AI into production
 
-I build AI for environments where failure is not an option: defence, nuclear, Formula 1, and live sports broadcasting.
+I build AI for environments where failure is not an option: defence, nuclear, aviation, and live sports broadcasting.
 
 [About me](https://tortoiseai.co.uk/about/ant-newman) · [Tortoise AI](https://tortoiseai.co.uk)
 
