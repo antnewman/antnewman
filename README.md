@@ -62,5 +62,5 @@ production-grade reliability actually requires.
 
 ## Contact
 
-info@tortoiseai.co.uk  
+antjsnewman@outlook.com 
 [tortoiseai.co.uk](https://tortoiseai.co.uk)
