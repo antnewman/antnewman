@@ -2,7 +2,7 @@
 
 CEO, Tortoise AI | 20 years getting AI into production
 
-I build AI for environments where failure is not an option — defence, nuclear, aviation and now live 
+I build AI for environments where failure is not an option, defence, nuclear, aviation, and now live 
 sports broadcasting! 
 
 When the frameworks I need don't exist, I build them open source.
@@ -44,8 +44,20 @@ Apache 2.0.
 
 ## Published Work
 
-**[From Policy to Practice](https://doi.org/10.5281/zenodo.18711384)** (2026)  
-An open framework for AI-ready project delivery.Ant Newman.  
+**[Verified Autonomy: A Field Guide to Engineering Trust in AI Systems](https://doi.org/10.5281/zenodo.19096229)** (May 2026)  
+A field guide for engineering trust into production AI systems, covering calibration, conformal prediction, audit trails, and constrained autonomy. Ant Newman, Shanti Greene, Malia Hosseini, Philip Kitchener, Rainier Potgieter, Hadley Christoffels. Companion repo: [verified-autonomy](https://github.com/antnewman/verified-autonomy).  
+CC BY 4.0 (content), MIT (code).
+
+**[From Policy to Practice: An Open Framework for AI-Ready Project Delivery](https://doi.org/10.5281/zenodo.18711384)** (Feb 2026)  
+An open framework for AI-ready project delivery. Ant Newman. Companion repo: [Project-Delivery-Toolkit](https://github.com/Tortoise-AI/Project-Delivery-Toolkit).  
+CC BY 4.0.
+
+**[Agent Reliability Maturity Model (ARMM) Framework v1.1](https://doi.org/10.5281/zenodo.18775086)** (Jan 2026)  
+Four-dimension, five-level maturity model for organisational readiness to deploy AI agents in production. Weakest-link principle. Ant Newman. Companion repo: [armm-assessment](https://github.com/Tortoise-AI/armm-assessment).  
+CC BY 4.0.
+
+**[The Sharon Instability Theorem: Generic Instability of the M-Invariant](https://doi.org/10.5281/zenodo.18777394)** (Dec 2025)  
+Resolves an open question on the robustness of the M-invariant in multiparameter persistence, proving it is generically unstable under perturbations. Ant Newman. Companion repo: [sharon-instability](https://github.com/Tortoise-AI/sharon-instability).  
 CC BY 4.0.
 
 ---
