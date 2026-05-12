@@ -11,7 +11,7 @@ When the frameworks I need don't exist, I build them open source.
 
 ## Frameworks
 
-**[ARMM (Agent Reliability Maturity Model)](https://tortoiseai.co.uk/armm)**  
+**[ARMM (Agent Readiness Maturity Model)](https://tortoiseai.co.uk/armm)**  
 Assessing organisational readiness to deploy AI agents in production.  
 Four dimensions. Five levels. Weakest-link principle. CC BY 4.0.
 
@@ -52,7 +52,7 @@ CC BY 4.0 (content), MIT (code).
 An open framework for AI-ready project delivery. Ant Newman. Companion repo: [Project-Delivery-Toolkit](https://github.com/Tortoise-AI/Project-Delivery-Toolkit).  
 CC BY 4.0.
 
-**[Agent Reliability Maturity Model (ARMM) Framework v1.1](https://doi.org/10.5281/zenodo.18775086)** (Jan 2026)  
+**[Agent Readiness Maturity Model (ARMM) Framework v1.1](https://doi.org/10.5281/zenodo.18775086)** (Jan 2026)  
 Four-dimension, five-level maturity model for organisational readiness to deploy AI agents in production. Weakest-link principle. Ant Newman. Companion repo: [armm-assessment](https://github.com/Tortoise-AI/armm-assessment).  
 CC BY 4.0.
 
