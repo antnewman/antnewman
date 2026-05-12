@@ -53,11 +53,11 @@ An open framework for AI-ready project delivery. Ant Newman. Companion repo: [Pr
 CC BY 4.0.
 
 **[Agent Readiness Maturity Model (ARMM) Framework v1.1](https://doi.org/10.5281/zenodo.18775086)** (Jan 2026)  
-Four-dimension, five-level maturity model for organisational readiness to deploy AI agents in production. Weakest-link principle. Ant Newman. Companion repo: [armm-assessment](https://github.com/Tortoise-AI/armm-assessment).  
+A maturity model that scores whether an organisation is ready to deploy AI agents in production, applying a weakest-link rule across four dimensions and five levels. Ant Newman. Companion repo: [armm-assessment](https://github.com/Tortoise-AI/armm-assessment).  
 CC BY 4.0.
 
 **[The Sharon Instability Theorem: Generic Instability of the M-Invariant](https://doi.org/10.5281/zenodo.18777394)** (Dec 2025)  
-Resolves an open question on the robustness of the M-invariant in multiparameter persistence, proving it is generically unstable under perturbations. Ant Newman. Companion repo: [sharon-instability](https://github.com/Tortoise-AI/sharon-instability).  
+Proves the M-invariant in multiparameter persistence is generically unstable, resolving an open question in the field. Ant Newman. Companion repo: [sharon-instability](https://github.com/Tortoise-AI/sharon-instability).  
 CC BY 4.0.
 
 ---
