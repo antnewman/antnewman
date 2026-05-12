@@ -42,6 +42,13 @@ Apache 2.0.
 
 ---
 
+## Contributions to AI safety tooling
+
+**[inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai)**  
+Contributing bug fixes, evaluation utilities, and metric-factory features to the UK AI Safety Institute's LLM evaluation framework.
+
+---
+
 ## Published Work
 
 **[Verified Autonomy: A Field Guide to Engineering Trust in AI Systems](https://doi.org/10.5281/zenodo.19096229)** (May 2026)  
