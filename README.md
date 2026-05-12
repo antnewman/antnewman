@@ -11,7 +11,7 @@ When the frameworks I need don't exist, I build them open source.
 
 ## Frameworks
 
-**[ARMM — Agent Reliability Maturity Model](https://tortoiseai.co.uk/armm)**  
+**[ARMM (Agent Reliability Maturity Model)](https://tortoiseai.co.uk/armm)**  
 Assessing organisational readiness to deploy AI agents in production.  
 Four dimensions. Five levels. Weakest-link principle. CC BY 4.0.
 
