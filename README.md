@@ -72,7 +72,8 @@ CC BY 4.0.
 ## Writing
 
 I publish on AI deployment, decision-making under complexity, and what 
-production-grade reliability actually requires.
+production-grade reliability actually requires. I also write Radical 
+Productivity, a weekly Substack on productivity systems and inclusion.
 
 [Radical Productivity](https://antnewman.substack.com) · 
 [LinkedIn](https://linkedin.com/in/ant-newman) · 
