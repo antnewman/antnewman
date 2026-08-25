@@ -2,8 +2,7 @@
 
 CEO, Tortoise AI | 20 years getting AI into production
 
-I build AI for environments where failure is not an option, defence, nuclear, aviation, and now live 
-sports broadcasting! 
+I build AI for environments where failure is not an option: defence, nuclear, aviation, and now live sports broadcasting.
 
 When the frameworks I need don't exist, I build them open source.
 
@@ -23,12 +22,10 @@ A scoring methodology for knowing how much time a decision should take.
 ## Open Source Projects
 
 **[pda-platform](https://github.com/antnewman/pda-platform)**  
-Open infrastructure for AI-enabled project delivery. Universal PM data 
-parser, MCP servers for Claude integration, AI reliability tooling. MIT.
+Open infrastructure for AI-enabled project delivery. Universal PM data parser, MCP servers for Claude integration, AI reliability tooling. MIT.
 
 **[agent-task-planning](https://pypi.org/project/agent-task-planning/)**  
-AI reliability framework with confidence extraction and outlier mining. 
-Multi-provider. Production guardrails. MIT.
+AI reliability framework with confidence extraction and outlier mining. Multi-provider. Production guardrails. MIT.
 
 **[pm-data-tools](https://pypi.org/project/pm-data-tools/)**  
 Universal parser for project management data. 8 formats + NISTA. MIT.
@@ -37,8 +34,7 @@ Universal parser for project management data. 8 formats + NISTA. MIT.
 Interactive self-assessment across 251 criteria. AGPL-3.0.
 
 **[Universal Dashboard Specification](https://github.com/Tortoise-AI/uds)**  
-Vendor-neutral declarative format for AI-native analytical dashboards. 
-Apache 2.0.
+Vendor-neutral declarative format for AI-native analytical dashboards. Apache 2.0.
 
 ---
 
@@ -82,17 +78,13 @@ CC BY 4.0.
 
 ## Writing
 
-I publish on AI deployment, decision-making under complexity, and what 
-production-grade reliability actually requires. I also write Radical 
-Productivity, a weekly Substack on productivity systems and inclusion.
+I publish on AI deployment, decision-making under complexity, and what production-grade reliability actually requires. I also write Radical Productivity, a weekly Substack on productivity systems and inclusion.
 
-[Radical Productivity](https://antnewman.substack.com) · 
-[LinkedIn](https://linkedin.com/in/ant-newman) · 
-[tortoiseai.co.uk/insights](https://tortoiseai.co.uk/insights)
+[Radical Productivity](https://antnewman.substack.com) · [LinkedIn](https://linkedin.com/in/ant-newman) · [tortoiseai.co.uk/insights](https://tortoiseai.co.uk/insights)
 
 ---
 
 ## Contact
 
-antjsnewman@outlook.com 
+antjsnewman@outlook.com  
 [tortoiseai.co.uk](https://tortoiseai.co.uk)
