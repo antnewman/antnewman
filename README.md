@@ -44,8 +44,19 @@ Apache 2.0.
 
 ## Contributions to AI safety tooling
 
-**[inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai)**  
-Contributing bug fixes, evaluation utilities, and metric-factory features to the UK AI Safety Institute's LLM evaluation framework.
+**[inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai)** — the UK AI Safety Institute's LLM evaluation framework.
+
+Merged:
+
+- [Atomic log file writes](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3950) — eval logs no longer corrupt when a run fills the disk or is interrupted mid-write.
+- [`aggregate(key, agg=...)` metric factory](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3850) — per-key aggregation for metrics computed over grouped samples.
+- [Warn when task arguments are entirely unconsumed](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4224) — surfaces silently ignored arguments instead of running an evaluation that quietly differs from the one asked for.
+- [Fix the MMLU CLI command on the Evals page](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3852).
+
+In review:
+
+- [Tag `math()` answer-extraction failures with a reason](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4091) — distinguishes a wrong answer from an unparseable one.
+- [Make the grader configurable via the grader model role](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2172) in [inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals).
 
 ---
 
