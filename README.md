@@ -51,8 +51,21 @@ Merged:
 
 In review:
 
-- [Tag `math()` answer-extraction failures with a reason](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4091) — distinguishes a wrong answer from an unparseable one.
-- [Make the grader configurable via the grader model role](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2172) in [inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals).
+- [Distinguish `math()` answer-extraction failures from wrong answers via `Score.reason`](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4091) — an unparseable answer and an incorrect one currently score the same.
+
+**[inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals)** — the companion suite of published evaluations.
+
+In review:
+
+- [Flag model roles that can silently fall back to the model under evaluation](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2321) — a lint check for graders that, left unconfigured, end up grading their own output.
+- [Make the grader configurable via the grader model role](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2172) across agieval, math and frontierscience.
+- [Fix a `UnicodeDecodeError` that stops the lint tool running on Windows](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2322).
+
+**[inspect_scout](https://github.com/meridianlabs-ai/inspect_scout)** — in-depth analysis of AI agent transcripts.
+
+In review:
+
+- [Collect concurrent scan reads with `tg_collect`](https://github.com/meridianlabs-ai/inspect_scout/pull/587) — moves the remaining `asyncio.gather` call sites onto the project's structured-concurrency helper.
 
 ---
 
