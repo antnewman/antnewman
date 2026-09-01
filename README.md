@@ -63,9 +63,9 @@ In review:
 
 **[inspect_scout](https://github.com/meridianlabs-ai/inspect_scout)** — in-depth analysis of AI agent transcripts.
 
-In review:
+Merged:
 
-- [Collect concurrent scan reads with `tg_collect`](https://github.com/meridianlabs-ai/inspect_scout/pull/587) — moves the remaining `asyncio.gather` call sites onto the project's structured-concurrency helper.
+- [Collect concurrent scan reads with `tg_collect`](https://github.com/meridianlabs-ai/inspect_scout/pull/587) — moves the remaining `asyncio.gather` call sites onto the project's structured-concurrency helper, closing a path where a cancelled read could silently truncate the results.
 
 ---
 
