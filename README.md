@@ -38,7 +38,9 @@ Vendor-neutral declarative format for AI-native analytical dashboards. Apache 2.
 
 ---
 
-## Contributions to AI safety tooling
+## Open source contributions
+
+### AI evaluation tooling
 
 **[inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai)** — the UK AI Safety Institute's LLM evaluation framework.
 
@@ -66,6 +68,20 @@ In review:
 Merged:
 
 - [Collect concurrent scan reads with `tg_collect`](https://github.com/meridianlabs-ai/inspect_scout/pull/587) — moves the remaining `asyncio.gather` call sites onto the project's structured-concurrency helper, closing a path where a cancelled read could silently truncate the results.
+
+### Python and ML ecosystem
+
+**[pytest](https://github.com/pytest-dev/pytest)** — the Python testing framework.
+
+In review:
+
+- [Do not fail on undecodable subprocess output](https://github.com/pytest-dev/pytest/pull/14963) — `Pytester.run()` read captured output as strict UTF-8, so a child process writing anything else took the whole run down with it, exit code included. Fixes [#7623](https://github.com/pytest-dev/pytest/issues/7623), open since 2020.
+
+**[huggingface/datasets](https://github.com/huggingface/datasets)** — the dataset library behind the Hugging Face Hub.
+
+In review:
+
+- [Close the Arrow writer when `finalize()` fails](https://github.com/huggingface/datasets/pull/8558) — a writer left open meant Windows cleanup raised from inside a `finally`, replacing the real error with a file-lock one. Fixes [#6917](https://github.com/huggingface/datasets/issues/6917).
 
 ---
 
