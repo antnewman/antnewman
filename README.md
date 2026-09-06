@@ -48,12 +48,9 @@ Merged:
 
 - [Atomic log file writes](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3950) — eval logs no longer corrupt when a run fills the disk or is interrupted mid-write.
 - [`aggregate(key, agg=...)` metric factory](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3850) — per-key aggregation for metrics computed over grouped samples.
+- [Distinguish `math()` answer-extraction failures from wrong answers via `Score.reason`](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4091) — an unparseable answer and an incorrect one used to score identically.
 - [Warn when task arguments are entirely unconsumed](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4224) — surfaces silently ignored arguments instead of running an evaluation that quietly differs from the one asked for.
 - [Fix the MMLU CLI command on the Evals page](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3852).
-
-In review:
-
-- [Distinguish `math()` answer-extraction failures from wrong answers via `Score.reason`](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4091) — an unparseable answer and an incorrect one currently score the same.
 
 **[inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals)** — the companion suite of published evaluations.
 
