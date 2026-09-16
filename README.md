@@ -50,21 +50,29 @@ Merged:
 - [`aggregate(key, agg=...)` metric factory](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3850) — per-key aggregation for metrics computed over grouped samples.
 - [Distinguish `math()` answer-extraction failures from wrong answers via `Score.reason`](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4091) — an unparseable answer and an incorrect one used to score identically.
 - [Warn when task arguments are entirely unconsumed](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4224) — surfaces silently ignored arguments instead of running an evaluation that quietly differs from the one asked for.
+- [Correct the documented `math()` scoring outcomes](https://github.com/UKGovernmentBEIS/inspect_ai/pull/5320) — the reference and Scoring Policy pages both said a malformed answer raises a scoring error, when it returns `INCORRECT` with a reason.
 - [Fix the MMLU CLI command on the Evals page](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3852).
 
 **[inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals)** — the companion suite of published evaluations.
 
-In review:
+Merged:
 
 - [Flag model roles that can silently fall back to the model under evaluation](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2321) — a lint check for graders that, left unconfigured, end up grading their own output.
-- [Make the grader configurable via the grader model role](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2172) across agieval, math and frontierscience.
 - [Fix a `UnicodeDecodeError` that stops the lint tool running on Windows](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2322).
+
+In review:
+
+- [Make the grader configurable via the grader model role](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2172) across agieval, math and frontierscience.
 
 **[inspect_scout](https://github.com/meridianlabs-ai/inspect_scout)** — in-depth analysis of AI agent transcripts.
 
 Merged:
 
 - [Collect concurrent scan reads with `tg_collect`](https://github.com/meridianlabs-ai/inspect_scout/pull/587) — moves the remaining `asyncio.gather` call sites onto the project's structured-concurrency helper, closing a path where a cancelled read could silently truncate the results.
+
+In review:
+
+- [Keep adaptive connections when the scan is certainly single-process](https://github.com/meridianlabs-ai/inspect_scout/pull/622) — `max_connections` was stamped even when nothing could contend for them, putting adaptive sizing out of reach.
 
 ### Python and ML ecosystem
 
