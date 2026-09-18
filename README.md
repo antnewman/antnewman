@@ -97,8 +97,12 @@ In review:
 A field guide for engineering trust into production AI systems, covering calibration, conformal prediction, audit trails, and constrained autonomy. Ant Newman, Shanti Greene, Malia Hosseini, Philip Kitchener, Rainier Potgieter, Hadley Christoffels. Companion repo: [verified-autonomy](https://github.com/antnewman/verified-autonomy).  
 CC BY 4.0 (content), MIT (code).
 
+**[Module-Level versus Chain-Level Stabilisation in Multiparameter Persistence](https://doi.org/10.5281/zenodo.18894819)** (Mar 2026)  
+Proves that module-level and chain-level ε-pruning are not equivalent, separating Bjerkevik's pruning of persistence modules from chain-level pruning of the M-invariant of spectral systems. Ant Newman.  
+CC BY 4.0.
+
 **[From Policy to Practice: An Open Framework for AI-Ready Project Delivery](https://doi.org/10.5281/zenodo.18711384)** (Feb 2026)  
-An open framework for AI-ready project delivery. Ant Newman. Companion repo: [Project-Delivery-Toolkit](https://github.com/Tortoise-AI/Project-Delivery-Toolkit).  
+An open framework for AI-ready project delivery. Ant Newman. Companion repo: [Project-Delivery-Toolkit](https://github.com/Tortoise-AI/Project-Delivery-Toolkit). Also on [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6362778).  
 CC BY 4.0.
 
 **[Agent Readiness Maturity Model (ARMM) Framework v1.1](https://doi.org/10.5281/zenodo.18775086)** (Jan 2026)  
@@ -106,8 +110,14 @@ A maturity model that scores whether an organisation is ready to deploy AI agent
 CC BY 4.0.
 
 **[The Sharon Instability Theorem: Generic Instability of the M-Invariant](https://doi.org/10.5281/zenodo.18777394)** (Dec 2025)  
-Proves the M-invariant in multiparameter persistence is generically unstable, resolving an open question in the field. Ant Newman. Companion repo: [sharon-instability](https://github.com/Tortoise-AI/sharon-instability).  
+Proves the M-invariant in multiparameter persistence is generically unstable, resolving an open question in the field. Ant Newman. Companion repo: [sharon-instability](https://github.com/Tortoise-AI/sharon-instability). Also on [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6362819).  
 CC BY 4.0.
+
+**[Closing the Gap: A Practical Framework for Implementing Data Analytics and AI into the Built Environment](https://doi.org/10.5281/zenodo.18679716)** (Jun 2025)  
+A green paper on embedding AI and data analytics in major government and infrastructure projects, setting out target states, 90-day starter actions and 12-month milestones. Project Data Analytics Task Force, with Ant Newman, Donnie MacNicol, Nermeen Latif, Richard Morgan and Jonah Froggatt.  
+CC BY 4.0.
+
+Also indexed at [ORCID](https://orcid.org/0000-0002-8612-3647) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=c4geXOsAAAAJ) · [ResearchGate](https://www.researchgate.net/profile/Ant-Newman-2) · [SSRN](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10629936) · [Academia](https://ucl.academia.edu/AntNewman).
 
 ---
 
