@@ -87,6 +87,7 @@ In review:
 In review:
 
 - [Close the Arrow writer when `finalize()` fails](https://github.com/huggingface/datasets/pull/8558) — a writer left open meant Windows cleanup raised from inside a `finally`, replacing the real error with a file-lock one. Fixes [#6917](https://github.com/huggingface/datasets/issues/6917).
+- [Do not rebuild a finalized `ArrowWriter`](https://github.com/huggingface/datasets/pull/8642) — `finalize()` clears `pa_writer` before closing the stream, so a close that raises leaves the writer indistinguishable from one never built and the next call rebuilds onto a closed stream. Companion to the above, which fixes the builder call sites; this fixes the writer itself.
 
 ---
 
