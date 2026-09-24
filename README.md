@@ -74,6 +74,7 @@ In review:
 
 - [Keep adaptive connections when the scan is certainly single-process](https://github.com/meridianlabs-ai/inspect_scout/pull/622) — `max_connections` was stamped even when nothing could contend for them, putting adaptive sizing out of reach.
 - [Say what to write when a filter is given as a bare string](https://github.com/meridianlabs-ai/inspect_scout/pull/654) — a string is iterable, so `messages="assistant"` was read as its characters: the error listed the word's own letters as invalid while naming `assistant` on the same line as allowed.
+- [`messages=["all"]` and `events=["all"]` scanned nothing instead of everything](https://github.com/meridianlabs-ai/inspect_scout/pull/660) — `"all"` means everything only as a bare filter, so inside a list it reached selection and was matched against role and event names, matching none. It passed validation and raised nothing, so the run was indistinguishable from a correct one.
 
 ### Python and ML ecosystem
 
