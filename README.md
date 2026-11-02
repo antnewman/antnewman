@@ -76,6 +76,16 @@ In review:
 
 - [Keep adaptive connections when the scan is certainly single-process](https://github.com/meridianlabs-ai/inspect_scout/pull/622) — `max_connections` was stamped even when nothing could contend for them, putting adaptive sizing out of reach.
 
+**[logic-md](https://github.com/SingularityAI-Dev/logic-md)** — a declarative, framework-agnostic format for specifying how an agent thinks.
+
+Merged:
+
+- [A public-sector risk-register assurance worked example](https://github.com/SingularityAI-Dev/logic-md/pull/45) — the format applied end to end to a real assurance workflow.
+- [Benchmark scaffold and calibrated assertions](https://github.com/SingularityAI-Dev/logic-md/pull/53) — `npm run bench` over a `__perf__` harness, with three assertions calibrated against measured baselines.
+- [Semantic canaries on compiled prompt output](https://github.com/SingularityAI-Dev/logic-md/pull/54) — pins what the compiler emits, not merely that it runs.
+- [Repository governance](https://github.com/SingularityAI-Dev/logic-md/pull/9) — code of conduct, issue and pull-request templates, Dependabot, and Actions pinned to commit SHAs.
+- Test fixtures covering [imports, parallel execution and the visual builder](https://github.com/SingularityAI-Dev/logic-md/pull/5), their [invalid-case counterparts](https://github.com/SingularityAI-Dev/logic-md/pull/19), and [full parsed expected output](https://github.com/SingularityAI-Dev/logic-md/pull/6) in place of a kitchen-sink note.
+
 ### Python and ML ecosystem
 
 **[pytest](https://github.com/pytest-dev/pytest)** — the Python testing framework.
