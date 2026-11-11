@@ -90,9 +90,9 @@ Merged:
 
 **[pytest](https://github.com/pytest-dev/pytest)** — the Python testing framework.
 
-In review:
+Approved, awaiting merge:
 
-- [Do not fail on undecodable subprocess output](https://github.com/pytest-dev/pytest/pull/14963) — `Pytester.run()` read captured output as strict UTF-8, so a child process writing anything else took the whole run down with it, exit code included. Fixes [#7623](https://github.com/pytest-dev/pytest/issues/7623), open since 2020.
+- [Do not fail on undecodable subprocess output](https://github.com/pytest-dev/pytest/pull/14963) — `Pytester.run()` read captured output as strict UTF-8, so a child process writing anything else took the whole run down with it, exit code included. Fixes [#7623](https://github.com/pytest-dev/pytest/issues/7623), open since 2020. Approved by a pytest maintainer on 11 November 2026.
 
 **[huggingface/datasets](https://github.com/huggingface/datasets)** — the dataset library behind the Hugging Face Hub.
 
