@@ -1,8 +1,10 @@
 # Ant Newman
 
-CEO, Tortoise AI | 20 years getting AI into production
+I measure whether your AI does what you think it does.
 
-I build AI for environments where failure is not an option: defence, nuclear, aviation, and now live sports broadcasting.
+20+ years deploying AI in safety-critical environments: defence, nuclear, Formula 1 and live broadcast. My view of AI in four lines: the gains are real and narrow. The harms are real and concentrated. Nobody has shown the controls work, including mine. So measure first.
+
+At Tortoise AI, which I co-founded with Melanie Walker, we build production AI tools for live broadcasting, and highly regulated environments like aviation and nuclear. Additionally, I am the fractional CTO at RGBY, where I initially started as an external consultant, to provide independent verification and validation evaluating their AI and mathematical products. I'm also fractional Chief AI Officer at Datum Verify, which I co-founded with Tom and Phil Kitchener.
 
 When the frameworks I need don't exist, I build them open source.
 
@@ -14,7 +16,7 @@ When the frameworks I need don't exist, I build them open source.
 Assessing organisational readiness to deploy AI agents in production.  
 Four dimensions. Five levels. Weakest-link principle. CC BY 4.0.
 
-**Decision Latency Framework** *(coming 2026)*  
+**Decision Latency Framework** *(article in preparation)*  
 A scoring methodology for knowing how much time a decision should take.
 
 ---
@@ -42,64 +44,64 @@ Vendor-neutral declarative format for AI-native analytical dashboards. Apache 2.
 
 ### AI evaluation tooling
 
-**[inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai)** — the UK AI Safety Institute's LLM evaluation framework.
+**[inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai)**: the UK AI Security Institute's LLM evaluation framework.
 
 Merged:
 
-- [Atomic log file writes](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3950) — eval logs no longer corrupt when a run fills the disk or is interrupted mid-write.
-- [`aggregate(key, agg=...)` metric factory](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3850) — per-key aggregation for metrics computed over grouped samples.
-- [Distinguish `math()` answer-extraction failures from wrong answers via `Score.reason`](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4091) — an unparseable answer and an incorrect one used to score identically.
-- [Warn when task arguments are entirely unconsumed](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4224) — surfaces silently ignored arguments instead of running an evaluation that quietly differs from the one asked for.
-- [Correct the documented `math()` scoring outcomes](https://github.com/UKGovernmentBEIS/inspect_ai/pull/5320) — the reference and Scoring Policy pages both said a malformed answer raises a scoring error, when it returns `INCORRECT` with a reason.
+- [Atomic log file writes](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3950): eval logs no longer corrupt when a run fills the disk or is interrupted mid-write.
+- [`aggregate(key, agg=...)` metric factory](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3850): per-key aggregation for metrics computed over grouped samples.
+- [Distinguish `math()` answer-extraction failures from wrong answers via `Score.reason`](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4091): an unparseable answer and an incorrect one used to score identically.
+- [Warn when task arguments are entirely unconsumed](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4224): surfaces silently ignored arguments instead of running an evaluation that quietly differs from the one asked for.
+- [Correct the documented `math()` scoring outcomes](https://github.com/UKGovernmentBEIS/inspect_ai/pull/5320): the reference and Scoring Policy pages both said a malformed answer raises a scoring error, when it returns `INCORRECT` with a reason.
 - [Fix the MMLU CLI command on the Evals page](https://github.com/UKGovernmentBEIS/inspect_ai/pull/3852).
 
-**[inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals)** — the companion suite of published evaluations.
+**[inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals)**: the companion suite of published evaluations.
 
 Merged:
 
-- [Flag model roles that can silently fall back to the model under evaluation](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2321) — a lint check for graders that, left unconfigured, end up grading their own output.
+- [Flag model roles that can silently fall back to the model under evaluation](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2321): a lint check for graders that, left unconfigured, end up grading their own output.
 - [Fix a `UnicodeDecodeError` that stops the lint tool running on Windows](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2322).
 
 In review:
 
 - [Make the grader configurable via the grader model role](https://github.com/UKGovernmentBEIS/inspect_evals/pull/2172) across agieval, math and frontierscience.
 
-**[inspect_scout](https://github.com/meridianlabs-ai/inspect_scout)** — in-depth analysis of AI agent transcripts.
+**[inspect_scout](https://github.com/meridianlabs-ai/inspect_scout)**: in-depth analysis of AI agent transcripts.
 
 Merged:
 
-- [Collect concurrent scan reads with `tg_collect`](https://github.com/meridianlabs-ai/inspect_scout/pull/587) — moves the remaining `asyncio.gather` call sites onto the project's structured-concurrency helper, closing a path where a cancelled read could silently truncate the results.
-- [`messages=["all"]` and `events=["all"]` scanned nothing instead of everything](https://github.com/meridianlabs-ai/inspect_scout/pull/660) — `"all"` means everything only as a bare filter, so inside a list it reached selection and was matched against role and event names, matching none. It passed validation and raised nothing, so the run was indistinguishable from a correct one.
-- [Say what to write when a filter is given as a bare string](https://github.com/meridianlabs-ai/inspect_scout/pull/654) — a string is iterable, so `messages="assistant"` was read as its characters: the error listed the word's own letters as invalid while naming `assistant` on the same line as allowed.
+- [Collect concurrent scan reads with `tg_collect`](https://github.com/meridianlabs-ai/inspect_scout/pull/587): moves the remaining `asyncio.gather` call sites onto the project's structured-concurrency helper, closing a path where a cancelled read could silently truncate the results.
+- [`messages=["all"]` and `events=["all"]` scanned nothing instead of everything](https://github.com/meridianlabs-ai/inspect_scout/pull/660): `"all"` means everything only as a bare filter, so inside a list it reached selection and was matched against role and event names, matching none. It passed validation and raised nothing, so the run was indistinguishable from a correct one.
+- [Say what to write when a filter is given as a bare string](https://github.com/meridianlabs-ai/inspect_scout/pull/654): a string is iterable, so `messages="assistant"` was read as its characters: the error listed the word's own letters as invalid while naming `assistant` on the same line as allowed.
 
 In review:
 
-- [Keep adaptive connections when the scan is certainly single-process](https://github.com/meridianlabs-ai/inspect_scout/pull/622) — `max_connections` was stamped even when nothing could contend for them, putting adaptive sizing out of reach.
+- [Keep adaptive connections when the scan is certainly single-process](https://github.com/meridianlabs-ai/inspect_scout/pull/622): `max_connections` was stamped even when nothing could contend for them, putting adaptive sizing out of reach.
 
-**[logic-md](https://github.com/SingularityAI-Dev/logic-md)** — a declarative, framework-agnostic format for specifying how an agent thinks.
+**[logic-md](https://github.com/SingularityAI-Dev/logic-md)**: a declarative, framework-agnostic format for specifying how an agent thinks.
 
 Merged:
 
-- [A public-sector risk-register assurance worked example](https://github.com/SingularityAI-Dev/logic-md/pull/45) — the format applied end to end to a real assurance workflow.
-- [Benchmark scaffold and calibrated assertions](https://github.com/SingularityAI-Dev/logic-md/pull/53) — `npm run bench` over a `__perf__` harness, with three assertions calibrated against measured baselines.
-- [Semantic canaries on compiled prompt output](https://github.com/SingularityAI-Dev/logic-md/pull/54) — pins what the compiler emits, not merely that it runs.
-- [Repository governance](https://github.com/SingularityAI-Dev/logic-md/pull/9) — code of conduct, issue and pull-request templates, Dependabot, and Actions pinned to commit SHAs.
+- [A public-sector risk-register assurance worked example](https://github.com/SingularityAI-Dev/logic-md/pull/45): the format applied end to end to a real assurance workflow.
+- [Benchmark scaffold and calibrated assertions](https://github.com/SingularityAI-Dev/logic-md/pull/53): `npm run bench` over a `__perf__` harness, with three assertions calibrated against measured baselines.
+- [Semantic canaries on compiled prompt output](https://github.com/SingularityAI-Dev/logic-md/pull/54): pins what the compiler emits, not merely that it runs.
+- [Repository governance](https://github.com/SingularityAI-Dev/logic-md/pull/9): code of conduct, issue and pull-request templates, Dependabot, and Actions pinned to commit SHAs.
 - Test fixtures covering [imports, parallel execution and the visual builder](https://github.com/SingularityAI-Dev/logic-md/pull/5), their [invalid-case counterparts](https://github.com/SingularityAI-Dev/logic-md/pull/19), and [full parsed expected output](https://github.com/SingularityAI-Dev/logic-md/pull/6) in place of a kitchen-sink note.
 
 ### Python and ML ecosystem
 
-**[pytest](https://github.com/pytest-dev/pytest)** — the Python testing framework.
+**[pytest](https://github.com/pytest-dev/pytest)**: the Python testing framework.
 
 Approved, awaiting merge:
 
-- [Do not fail on undecodable subprocess output](https://github.com/pytest-dev/pytest/pull/14963) — `Pytester.run()` read captured output as strict UTF-8, so a child process writing anything else took the whole run down with it, exit code included. Fixes [#7623](https://github.com/pytest-dev/pytest/issues/7623), open since 2020. Approved by a pytest maintainer on 11 November 2026.
+- [Do not fail on undecodable subprocess output](https://github.com/pytest-dev/pytest/pull/14963): `Pytester.run()` read captured output as strict UTF-8, so a child process writing anything else took the whole run down with it, exit code included. Fixes [#7623](https://github.com/pytest-dev/pytest/issues/7623), open since 2020. Approved by a pytest maintainer on 11 November 2026.
 
-**[huggingface/datasets](https://github.com/huggingface/datasets)** — the dataset library behind the Hugging Face Hub.
+**[huggingface/datasets](https://github.com/huggingface/datasets)**: the dataset library behind the Hugging Face Hub.
 
 In review:
 
-- [Close the Arrow writer when `finalize()` fails](https://github.com/huggingface/datasets/pull/8558) — a writer left open meant Windows cleanup raised from inside a `finally`, replacing the real error with a file-lock one. Fixes [#6917](https://github.com/huggingface/datasets/issues/6917).
-- [Do not rebuild a finalized `ArrowWriter`](https://github.com/huggingface/datasets/pull/8642) — `finalize()` clears `pa_writer` before closing the stream, so a close that raises leaves the writer indistinguishable from one never built and the next call rebuilds onto a closed stream. Companion to the above, which fixes the builder call sites; this fixes the writer itself.
+- [Close the Arrow writer when `finalize()` fails](https://github.com/huggingface/datasets/pull/8558): a writer left open meant Windows cleanup raised from inside a `finally`, replacing the real error with a file-lock one. Fixes [#6917](https://github.com/huggingface/datasets/issues/6917).
+- [Do not rebuild a finalized `ArrowWriter`](https://github.com/huggingface/datasets/pull/8642): `finalize()` clears `pa_writer` before closing the stream, so a close that raises leaves the writer indistinguishable from one never built and the next call rebuilds onto a closed stream. Companion to the above, which fixes the builder call sites; this fixes the writer itself.
 
 ---
 
@@ -135,7 +137,7 @@ Also indexed at [ORCID](https://orcid.org/0000-0002-8612-3647) · [Google Schola
 
 ## Writing
 
-I publish on AI deployment, decision-making under complexity, and what production-grade reliability actually requires. I also write Radical Productivity, a weekly Substack on productivity systems and inclusion.
+I write a Tuesday newsletter on LinkedIn about measuring AI, starting from "Are Your Five Controls Really Five?" (September 2026), and Radical Productivity, a Sunday Substack on productivity systems and inclusion.
 
 [Radical Productivity](https://antnewman.substack.com) · [LinkedIn](https://linkedin.com/in/ant-newman) · [tortoiseai.co.uk/insights](https://tortoiseai.co.uk/insights)
 
